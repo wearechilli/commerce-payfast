@@ -1,6 +1,6 @@
 <?php
 
-namespace stenvdb\payfast\responses;
+namespace wearechilli\payfast\responses;
 
 use Craft;
 use craft\commerce\base\RequestResponseInterface;

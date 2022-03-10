@@ -1,6 +1,6 @@
 <?php
 
-namespace stenvdb\payfast;
+namespace wearechilli\payfast;
 
 use Craft;
 use craft\commerce\services\Gateways;
@@ -8,7 +8,7 @@ use craft\events\RegisterComponentTypesEvent;
 use craft\helpers\App;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use stenvdb\payfast\gateways\Gateway;
+use wearechilli\payfast\gateways\Gateway;
 use yii\base\Event;
 
 

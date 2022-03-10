@@ -1,7 +1,7 @@
 {
   "name": "wearechilli/commerce-payfast",
   "description": "Payfast payment gateway for Craft Commerce",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "craft-plugin",
   "keywords": [
     "payfast",
@@ -17,7 +17,7 @@
     }
   ],
   "support": {
-    "email": "hello@stenvdb.be",
+    "email": "info@chilli.be",
     "issues": "https://github.com/wearechilli/commerce-payfast/issues?state=open",
     "source": "https://github.com/wearechilli/commerce-payfast",
     "docs": "https://github.com/wearechilli/commerce-payfast",

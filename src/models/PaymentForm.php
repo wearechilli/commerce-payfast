@@ -1,6 +1,6 @@
 <?php
 
-namespace stenvdb\payfast\models;
+namespace wearechilli\payfast\models;
 
 use craft\commerce\models\payments\BasePaymentForm;
 

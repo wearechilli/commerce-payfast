@@ -1,6 +1,6 @@
 <?php
 
-namespace stenvdb\payfast\gateways;
+namespace wearechilli\payfast\gateways;
 
 use Craft;
 use craft\commerce\base\Gateway as BaseGateway;
@@ -15,8 +15,8 @@ use craft\helpers\Json;
 use craft\helpers\UrlHelper;
 use craft\web\Response as WebResponse;
 use GuzzleHttp\Client;
-use stenvdb\payfast\models\PaymentForm;
-use stenvdb\payfast\responses\PaymentResponse;
+use wearechilli\payfast\models\PaymentForm;
+use wearechilli\payfast\responses\PaymentResponse;
 use Throwable;
 use yii\base\NotSupportedException;
 
