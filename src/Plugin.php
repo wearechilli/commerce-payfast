@@ -27,26 +27,6 @@ class Plugin extends \craft\base\Plugin
     {
         parent::init();
 
-        $client = new Client([
-            'base_uri' => 'https://api.payfast.co.za/'
-        ]);
-        $data = [];
-        $data['merchant-id'] = App::parseEnv('$PAYFAST_MERCHANT_ID');
-        // Craft::dd(App::parseEnv('$PAYFAST_MERCHANT_ID'));
-        $data['version'] = 'v1';
-        $data['timestamp'] = date('Y-m-d\TH:i:s');
-        $data['signature'] = $this->generateSignature($data);
-        // Craft::dd($data);
-        try {
-            $response = $client->post('refunds/query/' . '1372965', [
-                'form_params' => $data
-            ]);
-        } catch (ClientException $e) {
-            $response = $e->getResponse();
-            $responseBodyAsString = $response->getBody()->getContents();
-            Craft::dd($responseBodyAsString);
-        }
-
         Event::on(
             Gateways::class,
             Gateways::EVENT_REGISTER_GATEWAY_TYPES,

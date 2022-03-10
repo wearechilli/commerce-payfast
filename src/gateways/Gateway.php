@@ -160,8 +160,27 @@ class Gateway extends BaseGateway {
 
     public function refund(Transaction $transaction): RequestResponseInterface
     {
-        return '';
+        /*$client = new Client([
+           'base_uri' => 'https://api.payfast.co.za/'
+       ]);
+       $data = [];
+       $data['merchant-id'] = App::parseEnv('$PAYFAST_MERCHANT_ID');
+       // Craft::dd(App::parseEnv('$PAYFAST_MERCHANT_ID'));
+       $data['version'] = 'v1';
+       $data['timestamp'] = date('Y-m-d\TH:i:s');
+       $data['signature'] = $this->generateSignature($data);
+       // Craft::dd($data);
+       try {
+           $response = $client->post('refunds/query/' . '1372965', [
+               'form_params' => $data
+           ]);
 
+            // @TODO Check if response = 200, return RequestResponseInterface (see /responses)
+       } catch (ClientException $e) {
+           $response = $e->getResponse();
+           $responseBodyAsString = $response->getBody()->getContents();
+           Craft::dd($responseBodyAsString);
+       }*/
     }
 
     public function processWebHook(): WebResponse
