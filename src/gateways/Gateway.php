@@ -266,7 +266,7 @@ class Gateway extends BaseGateway {
 
     public function supportsRefund(): bool
     {
-        return true;
+        return false;
     }
 
     public function supportsPartialRefund(): bool
