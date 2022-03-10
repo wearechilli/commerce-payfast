@@ -1,0 +1,45 @@
+{
+  "name": "wearechilli/commerce-payfast",
+  "description": "Payfast payment gateway for Craft Commerce",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "keywords": [
+    "payfast",
+    "commerce",
+    "craftcms",
+    "yii2"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Chilli",
+      "homepage": "https://chilli.be/"
+    }
+  ],
+  "support": {
+    "email": "hello@stenvdb.be",
+    "issues": "https://github.com/wearechilli/commerce-payfast/issues?state=open",
+    "source": "https://github.com/wearechilli/commerce-payfast",
+    "docs": "https://github.com/wearechilli/commerce-payfast",
+    "rss": "https://github.com/wearechilli/commerce-payfast/commits/master.atom"
+  },
+  "require": {
+    "craftcms/cms": "^3.7",
+    "craftcms/commerce": "^3.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "wearechilli\\payfast\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Payfast for Craft Commerce",
+    "handle": "craft-payfast"
+  },
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}

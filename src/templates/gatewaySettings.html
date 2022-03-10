@@ -1,0 +1,41 @@
+{% from "_includes/forms" import textField, lightswitchField, autosuggestField, booleanMenuField %}
+
+{{ autosuggestField({
+label: 'Merchant ID'|t('commerce'),
+id: 'merchantId',
+class: 'ltr',
+name: 'merchantId',
+value: gateway.merchantId,
+suggestEnvVars: true,
+errors: gateway.getErrors('merchantId')
+}) }}
+
+{{ autosuggestField({
+label: "Merchant Key"|t('commerce'),
+id: 'merchantKey',
+class: 'ltr',
+name: 'merchantKey',
+value: gateway.merchantKey,
+suggestEnvVars: true,
+errors: gateway.getErrors('merchantKey')
+}) }}
+
+{{ autosuggestField({
+label: "Security Passphrase"|t('commerce'),
+id: 'passphrase',
+class: 'ltr',
+name: 'passphrase',
+value: gateway.passphrase,
+suggestEnvVars: true,
+errors: gateway.getErrors('passphrase')
+}) }}
+
+{{ booleanMenuField({
+label: "Test mode?"|t('commerce'),
+id: 'testMode',
+name: 'testMode',
+yesLabel: 'Enabled'|t('commerce'),
+noLabel: 'Disabled'|t('commerce'),
+includeEnvVars: true,
+value: gateway.testMode
+}) }}
