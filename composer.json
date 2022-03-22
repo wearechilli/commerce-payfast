@@ -1,7 +1,7 @@
 {
   "name": "wearechilli/commerce-payfast",
   "description": "Payfast payment gateway for Craft Commerce",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "craft-plugin",
   "keywords": [
     "payfast",
