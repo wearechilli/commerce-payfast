@@ -17,6 +17,7 @@ use craft\web\Response as WebResponse;
 use GuzzleHttp\Client;
 use wearechilli\payfast\models\PaymentForm;
 use wearechilli\payfast\responses\PaymentResponse;
+use wearechilli\payfast\responses\CompletePaymentResponse;
 use Throwable;
 use yii\base\NotSupportedException;
 
@@ -86,7 +87,7 @@ class Gateway extends BaseGateway {
 
     public function completePurchase(Transaction $transaction): RequestResponseInterface
     {
-        return '';
+        return new CompletePaymentResponse($transaction);
     }
 
     public function createPaymentSource(BasePaymentForm $sourceData, int $userId): PaymentSource
